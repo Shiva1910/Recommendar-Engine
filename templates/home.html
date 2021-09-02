@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow p-3 mb-5 bg-white rounded">
+  <h1 style="color:rgb(88, 24, 69)"> NETFLIX MOVIE RECOMMENDER ENGINE</h1>
+  <h3 style="color:rgb(88, 24, 69)">Enter the Hollywood movie name.</h3>
+</div>
+
+  <form action="{{url_for('recommend')}}">
+
+    <input type="text" name="movie" class="form-control" placeholder="Movie name here">
+    <br>
+    <input type="submit" class="btn btn-info" value="Enter">
+
+  </form>
+
+  <img src="..\Project\templates\pic1.jpg" alt="Netflix_img" width="1000" height="700">
+
+
+
+{% endblock %}
