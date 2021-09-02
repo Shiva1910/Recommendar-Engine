@@ -53,12 +53,14 @@ def rcmd(m):
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/",methods=['GET', 'POST'])
 def home():
+    if flask.request.method == 'GET':
     return render_template('home.html')
 
 @app.route("/recommend")
 def recommend():
+    if flask.request.method == 'POST':
     movie = request.args.get('movie')
     r = rcmd(movie)
     movie = movie.upper()
