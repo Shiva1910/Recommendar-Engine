@@ -9,7 +9,7 @@
 }
 
 body{
-	background-image: url("netf.jpg") ;
+	background-image: url("/static/netf.jpg") ;
 	 background-repeat: no-repeat ;
 	background-size: cover;
 
